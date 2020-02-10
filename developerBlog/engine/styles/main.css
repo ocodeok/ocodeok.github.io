@@ -1,0 +1,151 @@
+* {
+    margin:0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body {
+    /* position: relative; */
+}
+.container {
+    width: 1300px;
+    margin: 0 auto; 
+}
+
+.flex__wpapper__header {
+    display: flex;
+    height: 120px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header {
+    position: absolute;
+    background: #fff;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+nav.main__navigation {
+    display: inline-block;
+}
+
+nav.main__navigation ul li {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+nav.main__navigation ul li:first-child {
+    margin-left: 0;
+}
+
+nav.main__navigation ul li a {
+    color: #212121;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+header .logo span {
+    color: #212121;
+    font-family: "Open Sans";
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+
+/* prevew */
+
+section.prevew {
+    height: 100vh;
+    background: chocolate;
+    background: url('../images/webdisign-overlay.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.offset {
+    text-align: center;
+    display: inline-block;
+}
+
+.prevew__flex {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.offset h1 {
+    width: 812px;
+    height: 60px;
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 3px;
+}
+
+.offset span {
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 1.1px;
+}
+
+
+.btn {
+    display: inline-block;
+    height: 70px;
+    width: 220px;
+    border: 3px solid red;
+}
+
+/* block__btns */
+
+.block__btns {
+    margin-top: 100px;
+}
+.block__btns a {
+    display: block;
+    color: #ffffff;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.btn__ghost, .btn__regular {
+    width: 220px;
+    height: 70px;
+    border: 3px solid #f8f8f8;
+    line-height:70px;
+    margin: 0 30px;
+}
+
+.btn__regular  {
+    width: 220px;
+    height: 70px;
+    background-color: #00897b;
+}
+
+.downBar {
+    position: absolute;
+    bottom: 100px;
+    color: white;
+    font-size: 30px;    
+}
