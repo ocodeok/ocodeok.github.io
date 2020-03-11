@@ -1,0 +1,64 @@
+.slider-content, .slider {
+   height: 300px;
+   width: 300px;
+
+   background: black;
+}
+
+.slider {
+  background: #cccc;
+}
+
+.slider .item {
+    /* width: 300px;
+    height: 300px; */
+}
+.slider-content img {
+    width: 100%;
+    height: auto;
+}
+
+.control-slider {
+    text-align: center;
+}
+
+.conrol-slider-item {
+    display: inline-block;
+    cursor: pointer;
+    width: 50px;
+    height: 3px;
+    background-color: black;
+}
+
+.conrol-slider-item_active {
+    background: red;
+}
+
+.slider .item {
+    display: none;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.slider .active {
+    display: block;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}

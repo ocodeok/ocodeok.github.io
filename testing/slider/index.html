@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="engine/slider.css">
+    <style>
+    </style>
+    <title>Slider js</title>
+</head>
+<body>
+    <div class="container">
+        <div id="first" class="slider-content">
+            <div class="slider">
+                <div class="item">
+                    <img src="engine/images/bg-fusion.png" alt="fusion">
+                </div>
+    
+                <div class="item active">
+                    <img src="engine/images/car.jpg" alt="car">
+                </div>
+    
+                <div class="item">
+                    <img src="engine/images/fish.webp" alt="fish">
+                </div>
+    
+                <div class="item">
+                    <img src="engine/images/house.jfif" alt="house">
+                </div>  
+            </div>
+    
+            <div class="control-slider">
+                <span class="conrol-slider-item" onclick="firstSlider.showSlide(1)"></span>
+                <span class="conrol-slider-item conrol-slider-item_active" onclick="firstSlider.showSlide(2)"></span>
+                <span class="conrol-slider-item" onclick="firstSlider.showSlide(3)"></span>
+                <span class="conrol-slider-item" onclick="firstSlider.showSlide(4)"></span>
+            </div>
+        </div>
+    </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container">
+    <div id="second" class="slider-content">
+        <div class="slider">
+            <div class="item active">
+                <img src="engine/images/bg-fusion.png" alt="fusion">
+            </div>
+
+            <div class="item">
+                <img src="engine/images/car.jpg" alt="car">
+            </div>
+
+            <div class="item">
+                <img src="engine/images/fish.webp" alt="fish">
+            </div>
+
+            <div class="item">
+                <img src="engine/images/house.jfif" alt="house">
+            </div>  
+        </div>
+
+        <div class="control-slider">
+            <span class="conrol-slider-item conrol-slider-item_active" onclick="secondSlider.showSlide(1)"></span>
+            <span class="conrol-slider-item" onclick="secondSlider.showSlide(2)"></span>
+            <span class="conrol-slider-item" onclick="secondSlider.showSlide(3)"></span>
+            <span class="conrol-slider-item" onclick="secondSlider.showSlide(4)"></span>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+    <script src="engine/swipe.js"></script>
+    <script src="engine/slider.js"></script>
+</body>
+</html>
