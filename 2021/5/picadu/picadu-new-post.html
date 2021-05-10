@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Picadu - New post</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a class="header__logo" href="/">
+                    <img class="header__logo-image" src="img/icons/icon-logo.svg" alt="Icon: Logo">
+                </a>
+                <nav class="header__nav">
+                    <ul class="header__menu">
+                        <li class="header__menu-item"><a class="header__link" href="#">Свежее</a></li>
+                        <li class="header__menu-item"><a class="header__link" href="#">Лучшее</a></li>
+                        <li class="header__menu-item"><a class="header__link" href="#">Горячее</a></li>
+                        <li class="header__menu-item"><a class="header__link" href="#">Подписки</a></li>
+                    </ul>
+                </nav>
+                <div class="header__input-group input-group search">
+                    <input class="header__search-input search-input" type="search" placeholder="Поиск по сайту">
+                    <button class="button button-search">
+                        <svg class="header__logo-image icon" width="13" height="13">
+                            <use xlink:href="img/icon-sprite.svg#icon-search"></use>
+                        </svg>
+                    </button>
+                </div>
+                <a class="menu-toggle" href="#" id="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="content">
+        <div class="container">
+            <div class="content__wrapper">
+                <main class="posts">
+                    <form class="add-post">
+                        <input type="text" name="post-title" class="add-post__title" placeholder="Заголовок поста">
+                        <textarea name="text" id="text" class="add-post__text"
+                            placeholder="Текст вашего поста"></textarea>
+                        <div class="add-post__buttons">
+                            <button class="button button-add-new-post" type="submit">
+                                <svg class="icon icon-fire">
+                                    <use xlink:href="img/icon-sprite.svg#icon-fire"></use>
+                                </svg>
+                                Опубликовать пост
+                            </button>
+                            <button class="button button--outline" type="submit">
+                                <svg class="icon icon-camera">
+                                    <use xlink:href="img/icon-sprite.svg#icon-camera"></use>
+                                </svg>
+                                Видео
+                            </button>
+                            <button class="button button--outline" type="submit">
+                                <svg class="icon icon-picture">
+                                    <use xlink:href="img/icon-sprite.svg#icon-picture"></use>
+                                </svg>
+                                Фото
+                            </button>
+                        </div>
+                    </form>
+                </main>
+                <aside class="sidebar">
+                    <div class="user">
+                        <div class="user-info">
+                            <img width="40" height="40" class="user__avatar" alt="User: Avatar" src="img/avatar.jpg">
+                            <span class="user__name">Vector</span>
+                        </div>
+                        <a class="user__exit" href="#">
+                            <svg class="icon icon-poweroff">
+                                <use xlink:href="img/icon-sprite.svg#icon-poweroff"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <nav class="sidebar__nav">
+                        <ul class="sidebar__menu">
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link" href="#">Ответы</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link" href="#">Комментарии</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link sidebar__menu-link--active"
+                                    href="#">Оценки</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link" href="#">Сохраненное</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link" href="#">Подписки</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link" href="#">Заметки</a></li>
+                            <li class="sidebar__menu-item"><a class="sidebar__menu-link" href="#">Игнор-лист</a></li>
+                        </ul>
+                    </nav>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
